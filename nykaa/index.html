@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Documentation For Nykaa || Batch -1</title>
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/scrollbar.css" rel="stylesheet">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+    <!--Page Wrapper-->
+    <div class="page-wrapper">
+        <!--Sidebar-->
+        <aside id="sidebar">
+            <!--Toggle Button-->
+            <div class="button-container clearfix">
+                <div class="menu-toggle flaticon-menu10"></div>
+            </div>
+            <!--Menu Box-->
+            <div class="menu-box">
+                <!--Logo-->
+                <br>
+                <div class="logo text-right"><a href="#"><img src="images/nykaa.svg" alt=""></a></div>
+                <!--Sticky Menu-->
+                <nav class="sticky-menu">
+                    <ul>
+                        <li class="current"><a href="#introduction">Introduction <span
+                                    class="fa fa-arrow-right"></span></a></li>
+                        <li><a href="#html-structure"> Abstract <span class="fa fa-arrow-right"></span></a></li>
+                        <li><a href="#css-structure">CSS Files and Structure <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li><a href="#javascript">Javascript <span class="fa fa-arrow-right"></span></a></li>
+                        <li><a href="#map-settings">Google Map Settings <span class="fa fa-arrow-right"></span></a></li>
+                        <li><a href="#contact-form">Contact Form Settings<span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li><a href="#sources-credits">Sources and Credits <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li><a href="#support">Support <span class="fa fa-arrow-right"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="copyright">Copyright &copy; <a href="mailto:CSE">Computer Engineering</a> 2022</div>
+        </aside>
+
+        <div id="content-section">
+            <!--Introduction Section-->
+            <section class="section introduction" id="introduction">
+                <div class="sec-title">
+                    <span class="icon fa fa-windows"></span>
+                    <h2>Intoduction</h2>
+                </div>
+                <br>
+                <div class="sec-content">
+                    <h2>NYKAA</h2>
+                    <h3>NYKAA || Product Hunt Community Based Web Application</h3>
+                    <div class="separator"></div>
+                    <strong>Created :</strong> 15-04-2022<br>
+                    <strong>By :</strong> Computer Engineering<br>
+                    <strong>Batch I:</strong> <a href="Batch-I">Sivanraj K | Immanuvel B | Bala weslin D | Jeeva S | Mohammad Nasurutheen G | Muppudathi B
+                    </a><br>
+                    <br>
+                    <p> <strong>Aim of Our Project</strong> While there are tons of products in the world, it can be hard to navigate through the good and the bad. 
+                        The aim of our project is to create a product hunt clone that lets people post a new product with ratings.
+                        <br>----!</p>
+
+                        <p> <strong>Product hunt</strong> Tools like Product Hunt provide a platform to learn about new tools and get reactions and reviews from others. 
+                            When learning about products, reviews are a way we can trust a product before we purchase it. 
+                            It helps us gain confidence in what we’re about to spend our money or time on.
+                            
+                            <br>----!</p>
+                    <p> <strong>Purpose of Project</strong> Tools like Product Hunt provide a platform to learn about new tools and get reactions and reviews from others. 
+                                When learning about products, reviews are a way we can trust a product before we purchase it. 
+                                It helps us gain confidence in what we’re about to spend our money or time on.
+                                
+                                <br>----!</p>
+                    <p> <strong>Existing System</strong> Tools like Product Hunt provide a platform to learn about new tools and get reactions and reviews from others. 
+                                    When learning about products, reviews are a way we can trust a product before we purchase it. 
+                                    It helps us gain confidence in what we’re about to spend our money or time on.
+                                    
+                                    <br>----!</p>
+                    <p> <strong>Proposed System</strong> Tools like Product Hunt provide a platform to learn about new tools and get reactions and reviews from others. 
+                                        When learning about products, reviews are a way we can trust a product before we purchase it. 
+                                        It helps us gain confidence in what we’re about to spend our money or time on.
+                                        
+                                        <br>----!</p>
+                </div>
+            </section>
+
+            <!--HTML Structure-->
+            <section class="section html-structure" id="html-structure">
+                <div class="sec-title">
+                    <span class="icon fa fa-th-large"></span>
+                    <h2>Abstract</h2>
+                </div>
+                <br>
+                <div class="sec-content">
+                    <h3>The html template uses Latest <strong>Bootstrap v4.0</strong> with valid HTML5 tags. This theme
+                        is a responisve layout with 4 column Support column. All of the information in content area is
+                        nested within a class and comes with predefined classes.</h3>
+                    <pre>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      font-family: 'Urbanist', sans-serif;
+    }
+  </style>
+  <title>Nykaa Fahion</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
+</html>
+                    </pre>
+                </div>
+            </section>
+
+            <!--CSS Structure-->
+            <section class="section css-structure" id="css-structure">
+                <div class="sec-title">
+                    <span class="icon fa fa-at"></span>
+                    <h2>CSS Files and Structure</h2>
+                </div>
+                <br>
+                <div class="sec-content">
+                    <h3>Mainly three main CSS files are used in this theme. The first one
+                        <strong>bootstrap.css</strong>, second one is <strong>style.css</strong> which for this template
+                        and third one is <strong>responsive.css</strong> to control responsive layouts. </h3>
+                    <p>If you would like to edit a specific section of the site, simply find the appropriate label in
+                        the CSS file, and then scroll down until you find the appropriate style that needs to be edited.
+                    </p>
+                        <pre>
+<b>form</b>{
+    justify-content: space-between;
+    padding: 0.2rem calc((10vw - 1000px) / 2);
+    z-index: 12;
+    margin: auto;
+}
+<b>.searchBar</b>{
+    color:black;
+    font-size: medium;
+    border: 0px solid black;
+    height: 25px;
+    background-color: transparent;
+    max-width: 130px;
+  }
+  <b>textarea:focus, .searchBar:focus</b>{
+    outline: 0px solid;
+    background-color: transparent;
+}
+<b>::placeholder </b>{
+    color: gray;
+    font-size:medium;
+  }
+<b>.btn-search</b> {
+    color:black;
+    background-color: transparent;
+    transition: transform .2s;
+    border: none;
+}
+<b>.btn-search:hover</b> {
+    font-weight: bolder;
+    transform: scale(1.2);
+}
+ <b>.btn-search:active</b> {
+    color: white;
+  }
+                        </pre>
+                        Note: Other CSS styles are embeded within pages.
+                </div>
+            </section>
+
+            <!--Javascript-->
+            <section class="section javascript" id="javascript">
+                <div class="sec-title">
+                    <span class="icon fa fa-code"></span>
+                    <h2>React and Material UI</h2>
+                </div>
+                <br>
+                <div class="sec-content">
+                    <h3>This theme imports three types of Javascript files.</h3>
+                    <ul>
+                        <li>Material UI</li>
+                        <li>Custom scripts <strong>(custom.js)</strong></li>
+                        <li>Some plugins</li>
+                        <br>
+                        <li><strong>Material UI</strong> is a Javascript library that greatly reduces the amount of code that
+                            you must write.</li>
+                        <li>Most of the animation in this site is carried out from the customs scripts. There are a few
+                            functions worth looking over.</li>
+                    </ul>
+                    <br>
+                    <p>In addition to the custom scripts, I have implemented few "tried and true" plugins to create the
+                        effects. This plugin is packed, so you won't need to manually edit anything in the file. The
+                        only necessary thing to know is how to call the method</p>
+                </div>
+            </section>
+
+            <!--Map Settings-->
+            <section class="section map-settings" id="map-settings">
+                <div class="sec-title">
+                    <span class="icon fa fa-map-marker"></span>
+                    <h2>Google Map Settings</h2>
+                </div>
+                <br>
+                <div class="sec-content">
+                    <h3>You have to change latitude and longtitude value in <strong>index.html</strong> file inside the
+                        <strong>html folder</strong>. If you dont know how to get latitude and longitude value search on
+                        google or send us your location in google map, we will do that for you. here is a screenshot
+                        that shows where exactly you have to change these values.</h3>
+                    <p>You will find the setting code on <strong>contact.html</strong></p>
+                    <figure class="image-box"><img src="images/map-settings.jpg" alt=""></figure>
+                </div>
+            </section>
+
+            <!--Contact Form Settings-->
+            <section class="section contact-form" id="contact-form">
+                <div class="sec-title">
+                    <span class="icon fa fa-th-list"></span>
+                    <h2>Contact Form Settings</h2>
+                </div>
+                <br>
+                <div class="sec-content">
+                    <h3>We have added an attractive and fully functional contact form. You need to update the recipient
+                        name and email address.</h3>
+                    <p>You can change recipient name and email address in <strong>assets/inc/sendemail.php</strong></p>
+                    <figure class="image-box"><img src="images/mail-settings.jpg" alt=""></figure>
+                </div>
+            </section>
+
+            <!--Sources and Credits-->
+            <section class="section sources-credits" id="sources-credits">
+                <div class="sec-title">
+                    <span class="icon fa fa-credit-card"></span>
+                    <h2>Sources and Credits</h2>
+                </div>
+                <br>
+                <div class="sec-content">
+                    <h3>Fonts Used into the template are google fonts, you can find theme on Google Fonts API</h3>
+                    <p><strong>Fonts Used are :</strong></p>
+                    <p>Abril Fatface</p>
+                    <p>DM Sans</p>
+                    <p>Cormorant Garamond</p>
+                    <br>
+                    <p><strong> File Used For Animation Effects :</strong></p>
+                    <p><strong>wow.js</strong> (in js Folder)</p>
+                    <p><strong>animate.css</strong> (in css Folder)</p>
+                    <br>
+                    <p><strong>Sliders Used Are:</strong></p>
+                    <p>Owl Carousel Slider</p>
+                    <p>Owl Carousel</p>
+                    <p>Bx Slider</p>
+                    <p>Master Slider</p>
+                    <br>
+                    Every Code is properly commented for Editing Ease.
+                    <br>
+                    <br>
+                    <p><strong> Icons Used are :</strong></p>
+                    <br>
+                    <p>Fontawsome Icons<br><a href="https://fortawesome.github.io/Font-Awesome/"
+                            target="_blank">Fontawsome</a></p>
+                    <br>
+                    <p>Flaticon Icons<br><a target="_blank" href="http://flaticon.com">flaticon.com</a></p>
+                    <p>Used flaticons icon pack is attached as a zip with Documentation.</p><br>
+                    <p> From Flaticon, Icons are custom selected and downloaded as a font. If you want to use more icons
+                        you need to select icons of your choice from <a target="_blank"
+                            href="http://flaticon.com">flaticon.com</a> as font files and replace with the already added
+                        files.<br><strong>(Previous Flaticon icons will be removed when you will use your own selected
+                            icons font)</strong></p>
+                    <br>
+                </div>
+            </section>
+            <!--Support-->
+            <section class="section support" id="support">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2>Support</h2>
+                </div>
+                <br>
+                <div class="sec-content">
+                    <h3>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad
+                        to help you if you have any questions relating to this theme. No guarantees, but I'll do my best
+                        to assist. If you have any queries, please feel free to contact us at Support Center.</h3>
+                    <p>Email Us at : <a href="mailto:#">#</a> </p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--End pagewrapper-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
