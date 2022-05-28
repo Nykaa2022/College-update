@@ -5,6 +5,8 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import { mobile } from "../responsive";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import PositionedSnackbar from "../components/Alert";
 
 const Container = styled.div``;
 
@@ -103,7 +105,7 @@ const Amount = styled.span`
   margin: 0px 5px;
 `;
 
-const Button = styled.button`
+/*const Button = styled.button`
   padding: 15px;
   border: 2px solid teal;
   background-color: white;
@@ -113,7 +115,7 @@ const Button = styled.button`
   &:hover{
       background-color: #f8f4f4;
   }
-`;
+`; */
 
 const Product = () => {
   return (
@@ -122,29 +124,33 @@ const Product = () => {
       <Announcement />
       <Wrapper>
         <ImgContainer>
-          <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
+          <Image src="https://5.imimg.com/data5/ANDROID/Default/2021/4/VP/OA/MR/66774151/product-jpeg-500x500.jpg" />
         </ImgContainer>
         <InfoContainer>
-          <Title>Denim Jumpsuit</Title>
+          <Title>Dhanshvi tex Casual Wear Cotton silk saree, 6.3 m (with blouse piece)</Title>
           <Desc>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            venenatis, dolor in finibus malesuada, lectus ipsum porta nunc, at
-            iaculis arcu nisi sed mauris. Nulla fermentum vestibulum ex, eget
-            tristique tortor pretium ut. Curabitur elit justo, consequat id
-            condimentum ac, volutpat ornare.
+          *Dhanshvi tex present* *Saree Fabrics :
+          -* Soft Pure Cotton Silk saree With Jacquard Zari weaving Border..
+           *Blouse* : cotton silk
+            *Saree Length*: 5.50 Meter 
+            *Blouse Piece Length*: 0.80 Meter 
+            *Number Of Piece*: 06 
+            *Price*: 500/- *
+            Note=zalar will came on saree*
           </Desc>
-          <Price>$ 20</Price>
+          <Price>₹ 500</Price>
           <FilterContainer>
             <Filter>
               <FilterTitle>Color</FilterTitle>
-              <FilterColor color="black" />
-              <FilterColor color="darkblue" />
-              <FilterColor color="gray" />
+              <FilterColor color="red" />
+              <FilterColor color="darkviolet" />
+              <FilterColor color="gold" />
+              <FilterColor color="Yellow" />
             </Filter>
             <Filter>
-              <FilterTitle>Size</FilterTitle>
+              <FilterTitle>Saree Length</FilterTitle>
               <FilterSize>
-                <FilterSizeOption>XS</FilterSizeOption>
+                <FilterSizeOption>6.3 m (with blouse piece)</FilterSizeOption>
                 <FilterSizeOption>S</FilterSizeOption>
                 <FilterSizeOption>M</FilterSizeOption>
                 <FilterSizeOption>L</FilterSizeOption>
@@ -157,8 +163,8 @@ const Product = () => {
               <Remove />
               <Amount>1</Amount>
               <Add />
-            </AmountContainer>
-            <Button>ADD TO CART</Button>
+            </AmountContainer> 
+            <PositionedSnackbar/>
           </AddContainer>
         </InfoContainer>
       </Wrapper>

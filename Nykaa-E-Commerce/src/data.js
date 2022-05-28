@@ -2,10 +2,10 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://www.pinpng.com/pngs/m/52-524625_fashion-forward-episodes-offers-fashion-hd-png-download.png",
-      title: "Nykaa fashion",
-      desc: "Fashion is a source of looking better/attractive.",
-      bg: "f4e9f1",
+      img: "https://i.ibb.co/YLxwwvp/slider1.png",
+      title: "NYKAA FASHION",
+      desc: "Fashion is a source of looking better & attractive.",
+      bg: "f6d6d6",
     },
     {
       id: 2,
@@ -26,13 +26,13 @@ export const sliderItems = [
   export const categories = [
     {
       id: 1,
-      img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "SHIRT STYLE!",
+      img: "https://fcity.in/images/products/23578372/60be4_512.jpg",
+      title: "SAREE STYLES!",
     },
     {
       id: 2,
-      img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "LOUNGEWEAR LOVE",
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2022/05/All-Time-Popular-Simple-Half-Saree-Design-For-Women-2022.jpg",
+      title: "HALF SAREE DESIGN",
     },
     {
       id: 3,

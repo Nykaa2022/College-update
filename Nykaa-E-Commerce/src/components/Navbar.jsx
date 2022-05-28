@@ -1,5 +1,5 @@
 import { Avatar, Badge} from "@material-ui/core";
-import {ListOutlined, Search, ShoppingCartOutlined, HomeOutlined, PersonAdd, } from "@material-ui/icons";
+import {Search, ShoppingCartOutlined, HomeOutlined, PersonAdd, } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import SearchBar from "./search";
 import Man from "./Images/person.jpeg";
 import DehazeOutlinedIcon from "@mui/icons-material/DehazeOutlined";
+
 
 const Container = styled.div`
   height: 60px;
@@ -105,7 +106,7 @@ const Navbar = () => {
         <Left>
           <DehazeOutlinedIcon style={{ color: "#44107a", fontSize: 30,marginRight:"25px" }}></DehazeOutlinedIcon>
           <Language>EN</Language>
-          
+          <NavLink to='/'><HomeOutlined style={{ color: "#44107a", fontSize: 30,marginLeft:"25px" }} /></NavLink>
         </Left>
         <Center>
           <Logo>NYKAA.</Logo>
@@ -115,7 +116,7 @@ const Navbar = () => {
            <SearchBar />
             <Search style={{ color: "#44107a", fontSize: 22 }} />
           </SearchContainer>
-          <NavLink to='/'><HomeOutlined style={{ color: "#44107a", fontSize: 30 }} /></NavLink>
+          
           <NavLink to='/Register'style={{ textDecoration: 'none'}}><MenuItem><PersonAdd/></MenuItem></NavLink>
           <NavLink to='/Cart'>
             <MenuItem>
@@ -124,7 +125,7 @@ const Navbar = () => {
             </Badge>
           </MenuItem></NavLink>
           <NavLink to='/Login'style={{ textDecoration: 'none'}}><MenuItem><Avatar src={Man} style={{ height:"35px",width:"35px" }}/></MenuItem></NavLink>
-
+          
         </Right>
       </Wrapper>
     </Container>

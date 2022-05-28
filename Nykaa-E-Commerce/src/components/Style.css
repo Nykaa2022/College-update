@@ -7,7 +7,7 @@ form{
 .searchBar{
     color:black;
     font-size: medium;
-    border: 0px solid black;
+    border: none;
     height: 25px;
     background-color: transparent;
     max-width: 130px;
@@ -33,3 +33,6 @@ form{
   .btn-search:active{
     color: white;
   }
+input{
+  border: none;
+}
