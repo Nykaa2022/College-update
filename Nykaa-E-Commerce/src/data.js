@@ -2,24 +2,24 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://i.ibb.co/YLxwwvp/slider1.png",
+      img: "",
       title: "NYKAA FASHION",
-      desc: "Fashion is a source of looking better & attractive.",
-      bg: "f6d6d6",
+      desc: "FASHION IS A SOURCE OF LOOKING BETTER & ATTRACTIVE.",
+      bg: "https://images.pexels.com/photos/3769702/pexels-photo-3769702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       id: 2,
-      img: "https://i.ibb.co/DG69bQ4/2.png",
-      title: "AUTUMN COLLECTION",
+      img: "",
+      title: "SAREE COLLECTIONS",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "fcf1ed",
+      bg: "https://images.pexels.com/photos/1229414/pexels-photo-1229414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       id: 3,
-      img: "https://i.ibb.co/cXFnLLV/3.png",
-      title: "LOUNGEWEAR LOVE",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "fbf0f4",
+      img: "",
+      title: "DESIGNER GOWNS",
+      desc: "DON'T COMPROMISE ON GOWNS! GET FLAT 40% OFF FOR NEW ARRIVALS.",
+      bg: "https://images.pexels.com/photos/10241955/pexels-photo-10241955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
   ];
 
@@ -36,8 +36,59 @@ export const sliderItems = [
     },
     {
       id: 3,
-      img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      title: "LIGHT JACKETS",
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2022/05/Pink-And-Green-Color-Combination-Pattu-Half-Saree-For-Women-555x833.jpg",
+      title: "PATTU LANGA VONI SETS",
+    },
+  ];
+  export const categories1 = [
+    {
+      id: 1,
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2022/02/Half-Saree-Model-For-Wedding-555x833.webp",
+      title: "PATTU HALF SAREE",
+    },
+    {
+      id: 2,
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2022/04/Maharashtrian-Bride-Nauvari-Saree-Look-For-Wedding-2022-555x833.jpg",
+      title: "MAHARASHTRIAN NAUVARI",
+    },
+    {
+      id: 3,
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2022/05/Traditional-Silk-Saree-For-Wedding-Guest-2022.jpg",
+      title: "TRADITIONAL SILK SAREE",
+    },
+  ];
+  export const categories2 = [
+    {
+      id: 1,
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2022/04/Designer-Wedding-Anarakali-Gown-Design-555x833.jpg",
+      title: "LONG GOWN DESIGN",
+    },
+    {
+      id: 2,
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2022/02/Heavy-Work-Banarasi-Gown.webp",
+      title: "NEW ANARKALI SUIT",
+    },
+    {
+      id: 3,
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2022/03/Long-Salwar-Suit-For-Eid-Function-555x833.jpg",
+      title: "LONG SALWAR SUIT",
+    },
+  ];
+  export const categories3 = [
+    {
+      id: 1,
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2021/11/Latest-party-wear-Dresses-images-2022.jpg",
+      title: "PARTY WEAR DRESS",
+    },
+    {
+      id: 2,
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2021/07/Peach-gown-with-Jacket-indian-Style-2021-555x833.jpg",
+      title: "PEACH GOWN WITH JACKET",
+    },
+    {
+      id: 3,
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2021/07/Shilpa-shetty-Red-gown-dresses-2021-2-555x833.jpg",
+      title: "RED GOWN DRESS",
     },
   ];
 
@@ -48,7 +99,7 @@ export const sliderItems = [
     },
     {
       id:2,
-      img:"https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+      img:"https://anayadesignerstudio.com/wp-content/uploads/2022/01/half-and-half-kanchipuram-silk-sarees-555x833.webp",
     },
     {
       id:3,
@@ -68,11 +119,22 @@ export const sliderItems = [
     },
     {
       id:7,
-      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+      img:"https://anayadesignerstudio.com/wp-content/uploads/2021/08/Fancy-organza-sarees-Yellow.jpg",
     },
     {
       id:8,
       img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
     },
   ]
-  
+  export const divider = [
+    {
+      id: 1,
+      title: "SAREE STYLES",
+    },
+  ];
+  export const divider2 = [
+    {
+      id: 1,
+      title: "GOWN MODELS",
+    },
+  ];

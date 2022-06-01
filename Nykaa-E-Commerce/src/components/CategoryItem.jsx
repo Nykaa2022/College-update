@@ -6,6 +6,11 @@ const Container = styled.div`
   margin: 3px;
   height: 70vh;
   position: relative;
+  transition : transform .5s;
+  &:hover{
+    transform: scale(1.020);
+    background-color: rgba(266,165,213,0.3);
+  }
 `;
 
 const Image = styled.img`
@@ -13,7 +18,9 @@ const Image = styled.img`
   height: 100%;
   object-fit: cover;
   ${mobile({ height: "20vh" })}
-
+  &:hover{
+    
+  }
 `;
 
 const Info = styled.div`
@@ -31,6 +38,7 @@ const Info = styled.div`
 const Title = styled.h1`
     color:white;
     margin-bottom: 20px;
+    background
 `;
 
 const Button = styled.button`
@@ -60,5 +68,6 @@ const CategoryItem = ({ item }) => {
     </Container>
   );
 };
+
 
 export default CategoryItem;

@@ -27,9 +27,9 @@ export default function PositionedSnackbar() {
           vertical: 'top',
           horizontal: 'right',
         })}
-        style={{color:"deeppink",fontSmooth:"auto",fontWeight:"bold",borderLeft:"solid 2px",borderRadius:"0px"}}
+        style={{color:"teal",fontSmooth:"auto",fontWeight:"bold",borderLeft:"solid 2px",borderRadius:"0px"}}
       >
-        Add to the Cart
+      Add to the Cart
       </Button>
 
     </React.Fragment>
@@ -39,11 +39,10 @@ export default function PositionedSnackbar() {
     <div>
       {buttons}
       <Snackbar
-
        sx={{
         width: 400,
         color: "secondary",
-        "& .MuiSnackbarContent-root": { backgroundColor: "green" }
+        "& .MuiSnackbarContent-root": { backgroundColor: "teal" }
       }}
         anchorOrigin={{ vertical, horizontal }}
         open={open}

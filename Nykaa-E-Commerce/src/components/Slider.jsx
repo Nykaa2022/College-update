@@ -3,6 +3,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import { sliderItems } from "../data";
 import { mobile } from "../responsive";
+import {Link} from "react-router-dom"
 
 const Container = styled.div`
   width: 100%;
@@ -44,7 +45,10 @@ const Slide = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #${(props) => props.bg};
+  background-image: url(${(props) => props.bg});
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 `;
 
 const ImgContainer = styled.div`
@@ -57,21 +61,37 @@ const Image = styled.img`
 `;
 
 const InfoContainer = styled.div`
-  flex: 1;
+
   padding: 50px;
+  margin-right:100%;
 `;
 
 const Title = styled.h1`
-  font-size: 70px;
-  color:#ff1361;
+
+width: 100%;
+font-size: 90px;
+font-weight:bolder;
+color: transparent;
+background-image: linear-gradient(to right ,#553c9a, #ee4b2b, #cc3f54, #ff7f50, #553c9a);
+-webkit-background-clip: text;
+background-clip: text;    
+background-size: 200%;
+background-position: -200%;
+animation: animated-gradient 5s infinite alternate-reverse;      
+}
+@keyframes animated-gradient{
+to{
+  background-position: 200%;
+}
+}
 `;
 
 const Desc = styled.p`
   margin: 50px 0px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 800;
   letter-spacing: 3px;
-  color:#44107a;
+  color:#ebabdb;
 `;
 
 const Button = styled.button`
@@ -80,13 +100,14 @@ const Button = styled.button`
   background-color: transparent;
   cursor: pointer;
   font-size: 16px;
+  margin-left:50px;
   border-left:none;
   border-right:none;
   border-top: solid 12px #ff1361;
-  border-bottom: solid 12px #44107a;
+  border-bottom: solid 12px #c49be8;
   letter-spacing: 1px;
   transition:.1s;
-  color:#44107a;
+  color:#c49be8;
   padding: 13px 20px 13px;
   &:hover{
     font-weight:bold;
@@ -117,7 +138,7 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <Button>SHOW NOW</Button>
+              <Link to='/Product'><Button>SHOW NOW</Button></Link>
             </InfoContainer>
           </Slide>
         ))}

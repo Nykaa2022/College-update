@@ -218,7 +218,7 @@ const Cart = () => {
                   <ProductAmount>1</ProductAmount>
                   <Remove />
                 </ProductAmountContainer>
-                <ProductPrice>₹ 150</ProductPrice>
+                <ProductPrice>₹ 250</ProductPrice>
               </PriceDetail>
             </Product>
           </Info>
@@ -238,7 +238,7 @@ const Cart = () => {
             </SummaryItem>
             <SummaryItem type="total">
               <SummaryItemText>Total</SummaryItemText>
-              <SummaryItemPrice>₹ 180</SummaryItemPrice>
+              <SummaryItemPrice>₹ 330</SummaryItemPrice>
             </SummaryItem>
             <Button>CHECKOUT NOW</Button>
           </Summary>

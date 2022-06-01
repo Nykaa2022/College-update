@@ -7,6 +7,8 @@ import Newsletter from "../components/Newsletter";
 import { mobile } from "../responsive";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import PositionedSnackbar from "../components/Alert";
+import { ArrowBack } from "@material-ui/icons";
+import Rating from "../components/Rating"
 
 const Container = styled.div``;
 
@@ -122,7 +124,8 @@ const Product = () => {
     <Container>
       <Navbar />
       <Announcement />
-      <Wrapper>
+      <Link to='/' style={{marginLeft:"5%"}}><ArrowBack></ArrowBack></Link>
+      <Wrapper>     
         <ImgContainer>
           <Image src="https://5.imimg.com/data5/ANDROID/Default/2021/4/VP/OA/MR/66774151/product-jpeg-500x500.jpg" />
         </ImgContainer>
@@ -166,8 +169,9 @@ const Product = () => {
             </AmountContainer> 
             <PositionedSnackbar/>
           </AddContainer>
-        </InfoContainer>
+        </InfoContainer> 
       </Wrapper>
+      <Rating />
       <Newsletter />
       <Footer />
     </Container>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 form{
     justify-content: space-between;
     padding: 0.2rem calc((10vw - 1000px) / 2);
@@ -32,7 +33,6 @@ form{
 }
   .btn-search:active{
     color: white;
+   
   }
-input{
-  border: none;
-}
+  

@@ -43,10 +43,9 @@ const SearchContainer = styled.div`
   border-radius:15px;
   border:2px solid #44107a;
   transition: transform .2s;
-  &:active{
+&:focus: {
     transform:scale(1.1);
-   
-  }
+  }       
 `;
 
 const Input = styled.input`
@@ -109,7 +108,7 @@ const Navbar = () => {
           <NavLink to='/'><HomeOutlined style={{ color: "#44107a", fontSize: 30,marginLeft:"25px" }} /></NavLink>
         </Left>
         <Center>
-          <Logo>NYKAA.</Logo>
+          <Logo>NYKAA</Logo>
         </Center>
         <Right>
           <SearchContainer>
