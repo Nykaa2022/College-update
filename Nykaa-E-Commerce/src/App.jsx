@@ -61,6 +61,10 @@ function App() {
      window.location.href = 'https://github.com/Inman2004/nykaa-imman/tree/main/Nykaa-E-Commerce'; 
      return null;
 }}/>
+<Route path='/Mail' component={() => { 
+     window.location.href = 'https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new'; 
+     return null;
+}}/>
       </Switch>
     </Router>
   );

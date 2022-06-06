@@ -137,7 +137,7 @@ const Footer = () => {
           <Phone style={{marginRight:"10px",color:"steelblue"}}/> +91 987 654 3210
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{marginRight:"10px",color:"goldenrod"}} /> Nykaafashioncare@Gmail.com
+          <MailOutline style={{marginRight:"10px",color:"goldenrod"}} /><Link to='/Mail' style={{textDecoration:'none',color:"black"}}>Nykaafashioncare@Gmail.com</Link> 
         </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>
