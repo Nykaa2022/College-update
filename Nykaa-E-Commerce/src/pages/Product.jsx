@@ -36,7 +36,8 @@ const InfoContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  font-weight: 200;
+  font-weight: 400;
+  color:;
 `;
 
 const Desc = styled.p`
@@ -127,10 +128,10 @@ const Product = () => {
       <Link to='/' style={{marginLeft:"5%"}}><ArrowBack></ArrowBack></Link>
       <Wrapper>     
         <ImgContainer>
-          <Image src="https://5.imimg.com/data5/ANDROID/Default/2021/4/VP/OA/MR/66774151/product-jpeg-500x500.jpg" />
+          <Image src="https://anayadesignerstudio.com/wp-content/uploads/2022/05/All-Time-Popular-Simple-Half-Saree-Design-For-Women-2022.jpg" />
         </ImgContainer>
         <InfoContainer>
-          <Title>Dhanshvi tex Casual Wear Cotton silk saree, 6.3 m (with blouse piece)</Title>
+          <Title>Popular Simple Half Saree, 6.3 m (with blouse piece)</Title>
           <Desc>
           *Dhanshvi tex present* *Saree Fabrics :
           -* Soft Pure Cotton Silk saree With Jacquard Zari weaving Border..
@@ -141,7 +142,7 @@ const Product = () => {
             *Price*: 500/- *
             Note=zalar will came on saree*
           </Desc>
-          <Price>₹ 500</Price>
+          <Price>₹ 1800</Price>
           <FilterContainer>
             <Filter>
               <FilterTitle>Color</FilterTitle>

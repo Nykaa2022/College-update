@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
 form{
     justify-content: space-between;
     padding: 0.2rem calc((10vw - 1000px) / 2);
@@ -16,6 +17,7 @@ form{
   textarea:focus, .searchBar:focus{
     outline: 0px solid;
     background-color: transparent;
+
 }
 ::placeholder {
     color: gray;

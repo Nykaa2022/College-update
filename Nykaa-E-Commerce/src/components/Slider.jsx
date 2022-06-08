@@ -91,26 +91,53 @@ const Desc = styled.p`
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 3px;
-  color:#ebabdb;
+  color:#dc4767;
+  text-shadow:  
+  1px 2px 0px rgba(0, 0, 0, 0.3);
 `;
 
 const Button = styled.button`
   padding: 10px;
-  font-size: 20px;
   background-color: transparent;
   cursor: pointer;
+  font-weight:400;
   font-size: 16px;
   margin-left:50px;
-  border-left:none;
-  border-right:none;
-  border-top: solid 12px #ff1361;
-  border-bottom: solid 12px #c49be8;
+  border:none;
   letter-spacing: 1px;
   transition:.1s;
-  color:#c49be8;
+  color:crimson;
   padding: 13px 20px 13px;
+  transition: transform .2s;
+  font-size: 46pt;
+  font-family: 'Luckiest Guy';
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow:   0px -6px 0 #212121,  
+                 0px -6px 0 #212121,
+                 0px  6px 0 #212121,
+                 0px  6px 0 #212121,
+                -6px  0px 0 #212121,  
+                 6px  0px 0 #212121,
+                -6px  0px 0 #212121,
+                 6px  0px 0 #212121,
+                -6px -6px 0 #212121,  
+                 6px -6px 0 #212121,
+                -6px  6px 0 #212121,
+                 6px  6px 0 #212121,
+                -6px  18px 0 #212121,
+                 0px  18px 0 #212121,
+                 6px  18px 0 #212121,
+                 0 19px 1px rgba(0,0,0,.1),
+                 0 0 6px rgba(0,0,0,.1),
+                 0 6px 3px rgba(0,0,0,.3),
+                 0 12px 6px rgba(0,0,0,.2),
+                 0 18px 18px rgba(0,0,0,.25),
+                 0 24px 24px rgba(0,0,0,.2),
+                 0 36px 36px rgba(0,0,0,.15);
   &:hover{
-    font-weight:bold;
+    transform :scale(1.1)
   }
 `;
 
@@ -118,9 +145,9 @@ const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const handleClick = (direction) => {
     if (direction === "left") {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 3);
     } else {
-      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+      setSlideIndex(slideIndex < 3 ? slideIndex + 1 : 0);
     }
   };
 

@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { mobile } from "../responsive";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import SearchBar from "./search";
-import Man from "./Images/person.jpeg";
+import Man from "./Images/Slider3.jpg";
 import DehazeOutlinedIcon from "@mui/icons-material/DehazeOutlined";
 
 
@@ -43,7 +43,7 @@ const SearchContainer = styled.div`
   border-radius:15px;
   border:2px solid #44107a;
   transition: transform .2s;
-&:focus: {
+&:hover{
     transform:scale(1.1);
   }       
 `;

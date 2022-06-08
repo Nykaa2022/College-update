@@ -5,21 +5,28 @@ export const sliderItems = [
       img: "",
       title: "NYKAA FASHION",
       desc: "FASHION IS A SOURCE OF LOOKING BETTER & ATTRACTIVE.",
-      bg: "https://images.pexels.com/photos/3769702/pexels-photo-3769702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      bg: "https://cdn.dribbble.com/users/63407/screenshots/9852809/media/4d7e55cd62a5933a179511f5c87fa354.png?compress=1&resize=1200x900&vertical=top",
     },
     {
       id: 2,
       img: "",
       title: "SAREE COLLECTIONS",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "https://images.pexels.com/photos/1229414/pexels-photo-1229414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      bg: "https://cdn.dribbble.com/users/63407/screenshots/4664594/media/d3c019872aa8b059c8485b91f16f4625.png",
     },
     {
       id: 3,
       img: "",
       title: "DESIGNER GOWNS",
       desc: "DON'T COMPROMISE ON GOWNS! GET FLAT 40% OFF FOR NEW ARRIVALS.",
-      bg: "https://images.pexels.com/photos/10241955/pexels-photo-10241955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      bg: "https://cdn3.f-cdn.com/contestentries/86500/4336998/53b3c12899c1e_thumb900.jpg",
+    },
+    {
+      id: 4,
+      img: "",
+      title: "DESIGNER LEHENGA",
+      desc: "DON'T COMPROMISE ON LEHENGAS! GET FLAT 25% OFF FOR NEW ARRIVALS.",
+      bg: "https://images.pexels.com/photos/1229414/pexels-photo-1229414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
   ];
 

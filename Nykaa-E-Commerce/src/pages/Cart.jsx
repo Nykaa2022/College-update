@@ -172,43 +172,17 @@ const Cart = () => {
           <Info>
             <Product>
               <ProductDetail>
-                <Image src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1614188818-TD1MTHU_SHOE_ANGLE_GLOBAL_MENS_TREE_DASHERS_THUNDER_b01b1013-cd8d-48e7-bed9-52db26515dc4.png?crop=1xw:1.00xh;center,top&resize=480%3A%2A" />
+                <Image src="https://anayadesignerstudio.com/wp-content/uploads/2022/05/All-Time-Popular-Simple-Half-Saree-Design-For-Women-2022.jpg" />
                 <Details>
                   <ProductName>
-                    <b>Product:</b> NYKAA THUNDER SHOES
+                    <b>Product:</b> SIMPLE HALF SAREE DESIGN
                   </ProductName>
                   <ProductId>
                     <b>ID:</b> S9381
                   </ProductId>
-                  <ProductColor color="black" />
+                  <ProductColor color="DARKBLUE" />
                   <ProductSize>
-                    <b>Size:</b> 37.5
-                  </ProductSize>
-                </Details>
-              </ProductDetail>
-              <PriceDetail>
-                <ProductAmountContainer>
-                  <Add />
-                  <ProductAmount>2</ProductAmount>
-                  <Remove />
-                </ProductAmountContainer>
-                <ProductPrice>₹ 180</ProductPrice>
-              </PriceDetail>
-            </Product>
-            <Hr />
-            <Product>
-              <ProductDetail>
-                <Image src="https://i.pinimg.com/originals/2d/af/f8/2daff8e0823e51dd752704a47d5b795c.png" />
-                <Details>
-                  <ProductName>
-                    <b>Product:</b> HAKURA T-SHIRT
-                  </ProductName>
-                  <ProductId>
-                    <b>ID:</b> TS9381
-                  </ProductId>
-                  <ProductColor color="gray" />
-                  <ProductSize>
-                    <b>Size:</b> M
+                    <b>Size:</b> 6.3 m
                   </ProductSize>
                 </Details>
               </ProductDetail>
@@ -218,7 +192,33 @@ const Cart = () => {
                   <ProductAmount>1</ProductAmount>
                   <Remove />
                 </ProductAmountContainer>
-                <ProductPrice>₹ 250</ProductPrice>
+                <ProductPrice>₹ 1800</ProductPrice>
+              </PriceDetail>
+            </Product>
+            <Hr />
+            <Product>
+              <ProductDetail>
+                <Image src="https://anayadesignerstudio.com/wp-content/uploads/2022/02/Heavy-Work-Banarasi-Gown.webp" />
+                <Details>
+                  <ProductName>
+                    <b>Product:</b> NEW ANARKALI SUIT
+                  </ProductName>
+                  <ProductId>
+                    <b>ID:</b> TS9381
+                  </ProductId>
+                  <ProductColor color="skyblue" />
+                  <ProductSize>
+                    <b>Size:</b> XL
+                  </ProductSize>
+                </Details>
+              </ProductDetail>
+              <PriceDetail>
+                <ProductAmountContainer>
+                  <Add />
+                  <ProductAmount>1</ProductAmount>
+                  <Remove />
+                </ProductAmountContainer>
+                <ProductPrice>₹ 1250</ProductPrice>
               </PriceDetail>
             </Product>
           </Info>
@@ -226,7 +226,7 @@ const Cart = () => {
             <SummaryTitle>ORDER SUMMARY</SummaryTitle>
             <SummaryItem>
               <SummaryItemText>Subtotal</SummaryItemText>
-              <SummaryItemPrice>₹ 180</SummaryItemPrice>
+              <SummaryItemPrice>₹ 3300</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
               <SummaryItemText>Estimated Shipping</SummaryItemText>
@@ -238,7 +238,7 @@ const Cart = () => {
             </SummaryItem>
             <SummaryItem type="total">
               <SummaryItemText>Total</SummaryItemText>
-              <SummaryItemPrice>₹ 330</SummaryItemPrice>
+              <SummaryItemPrice>₹ 3300</SummaryItemPrice>
             </SummaryItem>
             <Button>CHECKOUT NOW</Button>
           </Summary>
