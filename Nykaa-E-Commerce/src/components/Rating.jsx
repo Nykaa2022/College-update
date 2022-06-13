@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
-import { Container, Radio, Rating } from "./RatingStyles";
+import { Container, Radio, Rating, Input, InputContainer ,Button} from "./RatingStyles"; 
+import { Send } from "@material-ui/icons";
+
 
 
 const Rate = () => {
@@ -31,6 +33,12 @@ const Rate = () => {
 			</label>
 		  );
 		})}
+		<InputContainer>
+        <Input placeholder="Tell something about this product" />
+        <Button>
+          <Send />
+        </Button>
+      </InputContainer>
 	  </Container>
 	);
   };

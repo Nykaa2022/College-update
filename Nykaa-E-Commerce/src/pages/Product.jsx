@@ -9,6 +9,9 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import PositionedSnackbar from "../components/Alert";
 import { ArrowBack } from "@material-ui/icons";
 import Rating from "../components/Rating"
+import Comments from "../components/Comments"
+
+
 
 const Container = styled.div``;
 
@@ -173,6 +176,7 @@ const Product = () => {
         </InfoContainer> 
       </Wrapper>
       <Rating />
+      <Comments />
       <Newsletter />
       <Footer />
     </Container>

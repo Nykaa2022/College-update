@@ -70,7 +70,7 @@ const Title = styled.h1`
 
 width: 100%;
 font-size: 90px;
-font-weight:bolder;
+font-weight:900;
 color: transparent;
 background-image: linear-gradient(to right ,#553c9a, #ee4b2b, #cc3f54, #ff7f50, #553c9a);
 -webkit-background-clip: text;

@@ -8,6 +8,10 @@ import Products from "../components/Products";
 import Slider from "../components/Slider";
 import { Divide1 } from "../components/Divider";
 import { Divide2 } from "../components/Divider";
+
+
+
+
 const Home = () => {
   return (
     <div>

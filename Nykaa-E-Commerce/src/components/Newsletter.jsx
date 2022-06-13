@@ -1,4 +1,5 @@
 import { Send } from "@material-ui/icons";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 
@@ -54,7 +55,7 @@ const Newsletter = () => {
       <InputContainer>
         <Input placeholder="Your email" />
         <Button>
-          <Send />
+          <Link to='/Mail' style={{color:"white"}}><Send /></Link>
         </Button>
       </InputContainer>
     </Container>

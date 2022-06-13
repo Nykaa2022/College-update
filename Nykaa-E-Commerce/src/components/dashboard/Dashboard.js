@@ -18,16 +18,17 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
-
+import { NavLink } from 'react-router-dom';
 import Deposits from './Deposits';
 import Orders from './Orders';
+import { Home } from '@material-ui/icons';
 
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        Nykaa fashion
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -120,6 +121,9 @@ function DashboardContent() {
             >
               Dashboard
             </Typography>
+            <IconButton color="inherit">
+                <NavLink to='/'style={{color:"white"}}><Home/></NavLink>
+            </IconButton>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
                 <NotificationsIcon />

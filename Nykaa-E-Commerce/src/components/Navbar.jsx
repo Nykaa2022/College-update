@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import SearchBar from "./search";
 import Man from "./Images/Slider3.jpg";
 import DehazeOutlinedIcon from "@mui/icons-material/DehazeOutlined";
-
+import { Mockdata } from "../mock data.json";
 
 const Container = styled.div`
   height: 60px;
@@ -103,7 +103,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <DehazeOutlinedIcon style={{ color: "#44107a", fontSize: 30,marginRight:"25px" }}></DehazeOutlinedIcon>
+          <NavLink to='/Dashboard'><DehazeOutlinedIcon style={{ color: "#44107a", fontSize: 30,marginRight:"25px" }}></DehazeOutlinedIcon></NavLink>
           <Language>EN</Language>
           <NavLink to='/'><HomeOutlined style={{ color: "#44107a", fontSize: 30,marginLeft:"25px" }} /></NavLink>
         </Left>
@@ -114,6 +114,7 @@ const Navbar = () => {
           <SearchContainer>
            <SearchBar />
             <Search style={{ color: "#44107a", fontSize: 22 }} />
+           
           </SearchContainer>
           
           <NavLink to='/Register'style={{ textDecoration: 'none'}}><MenuItem><PersonAdd/></MenuItem></NavLink>
