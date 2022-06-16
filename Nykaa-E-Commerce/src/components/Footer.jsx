@@ -103,10 +103,10 @@ const Footer = () => {
             <Link to='/Facebook'  style={{textDecoration:'none',color:"white"}}><Facebook /></Link>
           </SocialIcon>
           <SocialIcon color="E4405F">
-            <Instagram />
+          <Link to='/Instagram'  style={{textDecoration:'none',color:"white"}}><Instagram /></Link>
           </SocialIcon>
           <SocialIcon color="55ACEE">
-            <Twitter />
+          <Link to='/Twitter'  style={{textDecoration:'none',color:"white"}}><Twitter /></Link>
           </SocialIcon>
           <SocialIcon color="2a4b78">
           <Link to='/GitHup'  style={{textDecoration:'none',color:"white"}}><GitHub/></Link>

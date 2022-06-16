@@ -98,7 +98,40 @@ export const sliderItems = [
       title: "RED GOWN DRESS",
     },
   ];
-
+  export const categories4 = [
+    {
+      id: 1,
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2022/04/Yellow-Crop-Top-Lehenga-For-Haldi.jpg",
+      title: "LEHENGA FOR HALDI",
+    },
+    {
+      id: 2,
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2022/04/Party-Wear-Crop-Top-Lehenga-With-Jacket-555x833.jpg",
+      title: "PARTY WEAR LEHENGA",
+    },
+    {
+      id: 3,
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2022/02/Engagement-Lehenga-For-Bride-555x833.webp",
+      title: "ENGAGEMENT LEHENGA",
+    },
+  ];
+  export const categories5 = [
+    {
+      id: 1,
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2022/01/simple-mirror-work-crop-top-lehenga-555x833.webp",
+      title: "MIRROR WORK LEHENGA",
+    },
+    {
+      id: 2,
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2021/09/Indian-wedding-dresses-for-brides-sister-2021.jpg",
+      title: "INDIAN WEDDING DRESS",
+    },
+    {
+      id: 3,
+      img: "https://anayadesignerstudio.com/wp-content/uploads/2021/09/Crop-top-lehenga-with-dupatta-images.-555x833.jpg",
+      title: "LEHENGA WITH DUPATTA",
+    },
+  ];
   export const popularProducts = [
     {
       id:1,
@@ -143,5 +176,17 @@ export const sliderItems = [
     {
       id: 1,
       title: "GOWN MODELS",
+    },
+  ];
+  export const divider3 = [
+    {
+      id: 1,
+      title: "LEHENGA DESIGNS",
+    },
+  ];
+  export const divider4 = [
+    {
+      id: 1,
+      title: "POPULAR PRODUCTS",
     },
   ];

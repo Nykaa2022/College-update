@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { categories, categories1,categories2,categories3 } from "../data";
+import { categories, categories1, categories2, categories3, categories4, categories5 } from "../data";
 import { mobile } from "../responsive";
 import CategoryItem from "./CategoryItem";
 
@@ -48,6 +48,28 @@ export const Categories3 = () => {
   return (
     <Container>
       {categories3.map((item) => (
+        <CategoryItem item={item} key={item.id} />
+      ))}
+    </Container>
+    
+  );
+};
+
+export const Categories4 = () => {
+  return (
+    <Container>
+      {categories4.map((item) => (
+        <CategoryItem item={item} key={item.id} />
+      ))}
+    </Container>
+    
+  );
+};
+
+export const Categories5 = () => {
+  return (
+    <Container>
+      {categories5.map((item) => (
         <CategoryItem item={item} key={item.id} />
       ))}
     </Container>

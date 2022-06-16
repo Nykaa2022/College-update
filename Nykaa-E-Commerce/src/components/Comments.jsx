@@ -20,15 +20,15 @@ function createData(id, date, name, shipTo, Comment, amount) {
 const rows = [
   createData(
     0,
-    '16 Mar, 2019',
+    '16 May, 2022',
     'Elvis Presley',
     'Tupelo, MS',
-    'I Really Nice product😘👌',
+    'Amazing product😘👌',
     312.44,
   ),
   createData(
     1,
-    '16 Mar, 2019',
+    '16 May, 2022',
     'Paul McCartney',
     'London, UK',
     'Really Nice product💖',
@@ -36,14 +36,14 @@ const rows = [
   ),
   createData(
       2,
-       '16 Mar, 2019',
+       '16 May, 2022',
         'Tom Scholz',
          'Boston, MA',
           'Best Quality ever!👍',
            100.81),
   createData(
     3,
-    '16 Mar, 2019',
+    '16 May, 2022',
     'Michael Jackson',
     'Gary, IN',
     'I like this product more👏👏',
@@ -51,7 +51,7 @@ const rows = [
   ),
   createData(
     4,
-    '15 Mar, 2019',
+    '15 May, 2022',
     'Bruce Springsteen',
     'Long Branch, NJ',
     'Love this product😍',
@@ -71,10 +71,10 @@ export default function Comments() {
         <Table size="small">
           <TableHead>
             <TableRow>
-              <TableCell style={{fontWeight:"bold",backgroundColor:"seagreen"}}>Date</TableCell>
-              <TableCell style={{fontWeight:"bold",backgroundColor:"seagreen"}}>Name</TableCell>
-              <TableCell style={{fontWeight:"bold",backgroundColor:"seagreen"}}>From</TableCell>
-              <TableCell style={{fontWeight:"bold",backgroundColor:"seagreen"}}>Comment</TableCell>
+              <TableCell style={{fontWeight:"bold",backgroundColor:"seagreen",color:"whitesmoke"}}>Date</TableCell>
+              <TableCell style={{fontWeight:"bold",backgroundColor:"seagreen",color:"whitesmoke"}}>Name</TableCell>
+              <TableCell style={{fontWeight:"bold",backgroundColor:"seagreen",color:"whitesmoke"}}>From</TableCell>
+              <TableCell style={{fontWeight:"bold",backgroundColor:"seagreen",color:"whitesmoke"}}>Comment</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

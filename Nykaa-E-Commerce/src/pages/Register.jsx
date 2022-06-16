@@ -61,13 +61,14 @@ const Register = () => {
       <Wrapper>
         <Title>CREATE AN ACCOUNT</Title>
         <Form>
-          <Input placeholder="name" />
+          <Input placeholder="first name" />
           <Input placeholder="last name" />
-          <Input placeholder="PINCODE" />
           <Input placeholder="address" />
-          
           <Input placeholder="city/village" />
+          <Input placeholder="district" />
           <Input placeholder="state" />
+          <Input placeholder="pincode" />
+          <Input placeholder="contact number" />
           <Agreement>
             By creating an account, I consent to the processing of my personal
             data in accordance with the <b>PRIVACY POLICY</b>

@@ -55,7 +55,7 @@ const Newsletter = () => {
       <InputContainer>
         <Input placeholder="Your email" />
         <Button>
-          <Link to='/Mail' style={{color:"white"}}><Send /></Link>
+          <Link to='/Mail' style={{color:"white"}}><Send type=''/></Link>
         </Button>
       </InputContainer>
     </Container>

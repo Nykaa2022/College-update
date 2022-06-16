@@ -9,28 +9,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Registration from "./pages/Registration";
 import Dashboard from "./components/dashboard/Dashboard";
 import Comments from "./components/Comments";
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBIqgVIUgOpstpknVP42ytZNI0BMrheUOs",
-  authDomain: "nykaafashion-20212022.firebaseapp.com",
-  projectId: "nykaafashion-20212022",
-  storageBucket: "nykaafashion-20212022.appspot.com",
-  messagingSenderId: "580591227300",
-  appId: "1:580591227300:web:e0d357d8e6d21718cc3131",
-  measurementId: "G-E4XPVEQJQE"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
 
 function App() {
   return (
@@ -47,6 +25,7 @@ function App() {
         <Route path='/Dashboard' component={Dashboard} />
         <Route path='/Registration' component={Registration}/>
         <Route path='/Comments' component={Comments}/>
+        
 <Route path='/Facebook' component={() => { 
      window.location.href = 'https://www.instagram.com/rv_imman/'; 
      return null;
