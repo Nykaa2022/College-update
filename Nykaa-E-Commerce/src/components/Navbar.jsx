@@ -1,13 +1,14 @@
-import { Avatar, Badge} from "@material-ui/core";
-import {Search, ShoppingCartOutlined, HomeOutlined, PersonAdd, } from "@material-ui/icons";
+import {Badge} from "@material-ui/core";
+import {Search, ShoppingCartOutlined, HomeOutlined, GroupOutlined, PersonAddOutlined, } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import SearchBar from "./search";
-import Man from "./Images/Slider3.jpg";
-import DehazeOutlinedIcon from "@mui/icons-material/DehazeOutlined";
-import { Mockdata } from "../mock data.json";
+import SideBar from "./SideBar";
+import Avatarbtn from "./Avatarbtn";
+import Tooltip from "@mui/material/Tooltip";
+import Button  from "@mui/material/Button";
 
 const Container = styled.div`
   height: 60px;
@@ -97,14 +98,23 @@ const MenuItem = styled.div`
   }
   ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `;
-
+function handlenme(e) {
+  localStorage.removeItem("username")
+  localStorage.removeItem("type")
+  window.location = "/"
+}
 const Navbar = () => {
   return (
     <Container>
       <Wrapper>
         <Left>
-          <NavLink to='/Dashboard'><DehazeOutlinedIcon style={{ color: "#44107a", fontSize: 30,marginRight:"25px" }}></DehazeOutlinedIcon></NavLink>
-          <Language>EN</Language>
+          <SideBar />
+          <Language style={{ color: "#44107a"}}>EN</Language>
+          <NavLink to='/Blog'>
+            <Tooltip title="Go to Blog">
+            <GroupOutlined style={{ color: "#44107a", fontSize: 30,marginLeft:"25px" }}/></Tooltip> 
+            </NavLink>
+          
           <NavLink to='/'><HomeOutlined style={{ color: "#44107a", fontSize: 30,marginLeft:"25px" }} /></NavLink>
         </Left>
         <Center>
@@ -117,14 +127,20 @@ const Navbar = () => {
            
           </SearchContainer>
           
-          <NavLink to='/Register'style={{ textDecoration: 'none'}}><MenuItem><PersonAdd/></MenuItem></NavLink>
+          <NavLink to='/Register'style={{ textDecoration: 'none'}}><MenuItem><PersonAddOutlined/></MenuItem></NavLink>
           <NavLink to='/Cart'>
             <MenuItem>
             <Badge badgeContent={2} color="error">
               <ShoppingCartOutlined />
             </Badge>
           </MenuItem></NavLink>
-          <NavLink to='/Login'style={{ textDecoration: 'none'}}><MenuItem><Avatar src={Man} style={{ height:"35px",width:"35px" }}/></MenuItem></NavLink>
+          {localStorage.getItem("username") === null ? (
+                <>
+                <Button href="/Login" style={{ color: "#44107a", fontSize: 30,marginLeft:"25px" }}>Login</Button>
+                </>
+                ) : (
+                 <><Button onClick={handlenme}>Logout</Button></>
+                )}
           
         </Right>
       </Wrapper>

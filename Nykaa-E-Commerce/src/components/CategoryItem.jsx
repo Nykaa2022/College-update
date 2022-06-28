@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { useState, useEffect } from "react";
+import getData from "../pages/data/product_data";
 import { mobile } from "../responsive";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 const Container = styled.div`
@@ -36,7 +38,7 @@ const Info = styled.div`
 `;
 
 const Title = styled.h1`
-    color:white;
+    color:black;
     margin-bottom: 20px;
     background
 `;
@@ -57,17 +59,44 @@ const Button = styled.button`
     }
 `;
 
-const CategoryItem = ({ item }) => {
-  return (
-    <Container>
-      <Image src={item.img} />
+const MainContent = () => {
+  function handleSearch(id) {
+      window.location.assign('Product/'+id);
+  }
+ 
+
+  const [sproduct_card, setproduct_card] = useState([
+          {
+              id: 1,
+              product_name: "Rayes Alpha",
+              description: "Hands-free, Hads-on Mushc Experience",
+              price: 350,
+              currency: "₹",
+              thumb: "http://localhost:3000/images/1.png"
+          },
+      ]);
+
+  useEffect(() => {
+      getData((res) => {
+          console.log(res);
+          setproduct_card(res);
+       });
+    }, []);
+
+    console.log(localStorage.getItem('username'));
+    return (
+      <div>
+    {sproduct_card.map((item) =>
+
+    <Container key={item.id} onClick={handleSearch.bind(this,item.id)}>
+      <Image src={item.thumb} />
       <Info>
-        <Title>{item.title}</Title>
-        <Link to='/Product'><Button>SHOP NOW</Button></Link>
+        <Title>{item.product_name}</Title>
+        <Link to='/'><Button>SHOP NOW</Button></Link>
       </Info>
     </Container>
-  );
-};
+  )};</div>
+    )};
 
 
-export default CategoryItem;
+export default MainContent;

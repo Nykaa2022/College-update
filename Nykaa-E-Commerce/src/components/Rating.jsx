@@ -2,11 +2,47 @@ import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { Container, Radio, Rating, Input, InputContainer ,Button} from "./RatingStyles"; 
 import { Send } from "@material-ui/icons";
+import { PriceCheckTwoTone } from "@mui/icons-material";
+import axios from 'axios';
 
 
-
-const Rate = () => {
+const Rate = ({id}) => {
+	console.log("Pro id: ",id);
 	const [rate, setRate] = useState(0);
+	const [name, setname] = useState("");
+	function handlenme(e) {
+        setname(e.target.value);
+    }
+	function handleSubmit(e) {
+		if(localStorage.getItem("username") === null){
+			alert("Please Login")
+		  }else{
+			if(name == ""){
+				alert("No empty comments")
+			}else{
+				var url = 'http://localhost/project/addcomment.php?comment='+name+'&pid='+id+'&user='+localStorage.getItem("username");
+				const formData = new FormData();
+				formData.append('avatar',"hi")
+				axios.post(url, formData,{
+				headers: {
+					'content-type': 'multipart/form-data'
+					}
+				})
+					.then(res => {
+					if(!res.data.status){
+						setname("");
+						alert(res.data.message);
+					}else{
+						window.location.reload();
+						setname("");
+						alert(res.data.message);
+					}
+					})
+				}
+		
+    //     
+		  }
+     }
 	return (
 	  <Container>
 		{[...Array(5)].map((item, index) => {
@@ -34,8 +70,8 @@ const Rate = () => {
 		  );
 		})}
 		<InputContainer>
-        <Input placeholder="Tell something about this product" />
-        <Button>
+        <Input value={name} onChange={handlenme.bind(this)} placeholder="Tell something about this product" />
+        <Button  onClick={handleSubmit.bind(this)}>
           <Send />
         </Button>
       </InputContainer>

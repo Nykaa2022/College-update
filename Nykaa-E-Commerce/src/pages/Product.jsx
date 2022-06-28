@@ -10,7 +10,12 @@ import PositionedSnackbar from "../components/Alert";
 import { ArrowBack } from "@material-ui/icons";
 import Rating from "../components/Rating"
 import Comments from "../components/Comments"
-
+import FullComment from "../components/Fullcomments"
+import Comments from "../components/Comments";
+import React, { useState, useEffect } from 'react';
+import getDataa from "./data/product_id_data";
+import {useParams} from 'react-router-dom';
+import axios from 'axios';
 
 
 const Container = styled.div``;
@@ -123,29 +128,88 @@ const Amount = styled.span`
   }
 `; */
 
-const Product = () => {
-  return (
+const Product = ()=>{
+
+  
+    // const [sproduct_card, setproduct_card] = useState([
+    //   {
+    //       id: 1,
+    //       product_name: "Rayes Alpha",
+    //       description: "Hands-free, Hads-on Mushc Experience",
+    //       price: 350,
+    //       currency: "$",
+    //       thumb: "http://localhost:3000/images/1.png"
+    //   },
+    // ]);
+    const params = useParams();
+    var id = params.id;
+
+    console.log(id);
+   
+    // useEffect(() => {
+    //   var id = params.id;
+    //   getDataa(id,(res) => {
+    //       console.log(res);
+    //       setproduct_card(res);
+    //    });
+    // }, []);
+  
+  //   function handlelds(e) {
+  //     setldesc(e.target.value);
+  // }
+  
+  //   function handleSubmit(e) {
+  //     var id = params.id;
+  //     var url = 'http://localhost/project/addcomment.php?name='+ldesc+"&pid="+id;
+  //     const formData = new FormData();
+  //     formData.append('avatar',"hi")
+  //     axios.post(url, formData)
+  //     .then(res => {
+  //        if(!res.data.error){
+  //         setldesc("");
+  //         alert(res.data.message);
+  //        }else{
+  //         alert(res.data.message);
+  //        }
+  //     })
+  // }
+//   const listItems = sproduct_card.map((item) =>
+//   <div className="details" key={item._id}>
+//   <div className="big-img">
+//     <img src={item.thumb} alt=""/>
+//   </div>
+
+//   <div className="box">
+//     <div className="row">
+//       <h2>{item.product_name}</h2>
+//       <span>${item.price}</span>
+//     </div>
+
+//     <p>{item.description}</p>
+
+//     <button className="cart">Add to cart</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+//     <button className="cart">Buy Now</button>
+
+//   </div>
+// </div>
+
+//   );
+return (
     <Container>
       <Navbar />
       <Announcement />
       <Link to='/' style={{marginLeft:"5%"}}><ArrowBack></ArrowBack></Link>
-      <Wrapper>     
+      
+      <Wrapper  >     
         <ImgContainer>
-          <Image src="https://anayadesignerstudio.com/wp-content/uploads/2022/05/All-Time-Popular-Simple-Half-Saree-Design-For-Women-2022.jpg" />
+          <Image src="" alt="no img" />
         </ImgContainer>
         <InfoContainer>
-          <Title>Popular Simple Half Saree, 6.3 m (with blouse piece)</Title>
+          <Title>asada</Title>
           <Desc>
-          *Dhanshvi tex present* *Saree Fabrics :
-          -* Soft Pure Cotton Silk saree With Jacquard Zari weaving Border..
-           *Blouse* : cotton silk
-            *Saree Length*: 5.50 Meter 
-            *Blouse Piece Length*: 0.80 Meter 
-            *Number Of Piece*: 06 
-            *Price*: 500/- *
-            Note=zalar will came on saree*
+          dbaskasnak
           </Desc>
-          <Price>₹ 1800</Price>
+          <Price>₹ 500</Price>
           <FilterContainer>
             <Filter>
               <FilterTitle>Color</FilterTitle>
@@ -177,10 +241,11 @@ const Product = () => {
       </Wrapper>
       <Rating />
       <Comments />
+      <FullComment />
       <Newsletter />
       <Footer />
     </Container>
   );
 };
 
-export default Product;
+export default Product();

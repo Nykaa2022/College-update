@@ -29,6 +29,8 @@ export const Input = styled.input`
   border: none;
   flex: 8;
   padding-left: 20px;
+  font-size:20px;
+  font-weight:500;
 `;
 
 export const Button = styled.button`
