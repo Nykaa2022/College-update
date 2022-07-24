@@ -1,2 +1,1 @@
-# College-update
-from clg
+# Nykaa Project
