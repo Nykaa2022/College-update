@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { Container, Radio, Rating, Input, InputContainer ,Button} from "./RatingStyles"; 
-import { Send } from "@material-ui/icons";
+import { Send } from "@mui/icons-material";
 import { PriceCheckTwoTone } from "@mui/icons-material";
 import axios from 'axios';
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 import {
   List,
   ListItem,
@@ -8,7 +8,7 @@ import {
   ListItemAvatar,
   Avatar,
   Typography
-} from "@material-ui/core";
+} from "@mui/material";
 
 const useStyles = makeStyles(theme => ({
   root: {

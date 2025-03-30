@@ -21,7 +21,7 @@ import { mainListItems, secondaryListItems } from './listItems';
 import { NavLink } from 'react-router-dom';
 import Deposits from './Deposits';
 import Orders from './Orders';
-import { Home } from '@material-ui/icons';
+import { Home } from '@mui/icons-material';
 
 function Copyright(props) {
   return (

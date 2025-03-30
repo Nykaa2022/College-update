@@ -5,10 +5,10 @@ import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
-import { Person } from '@material-ui/icons';
+import { Person } from '@mui/icons-material';
 import Typography from '@mui/material/Typography';
 import Man from "./Images/Slider3.jpg";
-import { Avatar } from '@material-ui/core';
+import { Avatar } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { Divider } from '@mui/material';
 

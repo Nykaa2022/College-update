@@ -1,4 +1,4 @@
-import { Add, Remove } from "@material-ui/icons";
+import { Add, Remove } from "@mui/icons-material";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
@@ -7,7 +7,7 @@ import Newsletter from "../components/Newsletter";
 import { mobile } from "../responsive";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import PositionedSnackbar from "../components/Alert";
-import { ArrowBack } from "@material-ui/icons";
+import { ArrowBack } from "@mui/icons-material";
 import Rating from "../components/Rating"
 import Comments from "../components/Comments"
 import FullComment from "../components/Fullcomments"

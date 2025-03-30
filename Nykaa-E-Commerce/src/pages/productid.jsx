@@ -9,22 +9,22 @@ import { mobile } from '../responsive';
 import axios from 'axios';
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import PositionedSnackbar from "../components/Alert";
-import { ArrowBack } from "@material-ui/icons";
+import { ArrowBack } from "@mui/icons-material";
 import Commentsbox from '../components/Comments';
 import Rating from "../components/Rating"
 import FullComment from '../components/Fullcomments';
 import Announcement from '../components/Announcement';
-import { Add, Remove } from "@material-ui/icons";
+import { Add, Remove } from "@mui/icons-material";
 
 import {
     makeStyles,
     createTheme,
     ThemeProvider
-  } from "@material-ui/core/styles";
-  import Container from "@material-ui/core/Container";
-  import Typography from "@material-ui/core/Typography";  
+  } from "@mui/styles";
+  import Container from "@mui/material/Container";
+  import Typography from "@mui/material/Typography";  
   import Comments from "./Comments";
-  import { CssBaseline, Grid } from "@material-ui/core";
+  import { CssBaseline, Grid } from "@mui/material";
 
   const ProContainer = styled.div``;
 

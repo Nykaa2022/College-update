@@ -2,8 +2,8 @@ import { useState } from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import { Link } from "react-router-dom";
-import { ArrowBack } from "@material-ui/icons";
-import { Divider } from "@material-ui/core";
+import { ArrowBack } from "@mui/icons-material";
+import { Divider } from "@mui/material";
 import axios from "axios";
 
 const Container = styled.div`

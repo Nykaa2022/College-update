@@ -2,7 +2,7 @@ import {useState} from "react"
 import styled from "styled-components";
 import {mobile} from "../responsive";
 import { Link } from "react-router-dom";
-import { Divider } from "@material-ui/core";
+import { Divider } from "@mui/material";
 import axios from 'axios';
 
 const Container = styled.div`

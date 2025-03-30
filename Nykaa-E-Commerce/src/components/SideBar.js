@@ -11,7 +11,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import DehazeOutlinedIcon from "@mui/icons-material/DehazeOutlined";
-import { FavoriteOutlined, ShoppingBasketOutlined } from '@material-ui/icons';
+import { FavoriteOutlined, ShoppingBasketOutlined } from '@mui/icons-material';
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
